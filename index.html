@@ -265,10 +265,10 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-06-05T19:09:47+08:00">
+                      <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-06-05T19:09:47+08:00">
                 2017-06-05
-              </time>
-            
+              </time>   
+	 
 
             
 
@@ -460,6 +460,10 @@
 <li>早上起来媳妇儿泡的热牛奶给我喝，喝下去全身都暖和了，你就是我冬天的小太阳。</li>
 </ul>
 <p><img src="http://ww1.sinaimg.cn/large/a0d572cagy1fmmamvn030j21400u0jry.jpg" alt=""></p>
+<ul>
+<li>我们第一次一起过圣诞节，和你在一起的过的很开心，和你的每一天每一分每一秒都很开心。</li>
+</ul>
+<p><img src="http://ww1.sinaimg.cn/large/a0d572cagy1fmuh98qavij20u0140qdf.jpg" alt=""></p>
 
           
         
@@ -563,7 +567,33 @@
         
         
 
-        
+        <div id="days" style="margin-left: 40px;"></div>
+</script>
+<script language="javascript">
+function show_date_time(){
+window.setTimeout("show_date_time()", 1000);
+BirthDay=new Date("06/06/2017 00:00:00");
+today=new Date();
+timeold=(today.getTime()-BirthDay.getTime());
+sectimeold=timeold/1000
+secondsold=Math.floor(sectimeold);
+msPerDay=24*60*60*1000
+e_daysold=timeold/msPerDay
+daysold=Math.floor(e_daysold);
+e_hrsold=(e_daysold-daysold)*24;
+hrsold=setzero(Math.floor(e_hrsold));
+e_minsold=(e_hrsold-hrsold)*60;
+minsold=setzero(Math.floor((e_hrsold-hrsold)*60));
+seconds=setzero(Math.floor((e_minsold-minsold)*60));
+document.getElementById('days').innerHTML="我们在一起的第<br/>"+daysold+"天"+hrsold+"时"+minsold+"分"+seconds+"秒";
+}
+function setzero(i){
+if (i<10)
+{i="0" + i};
+return i;
+}
+show_date_time();
+</script>
 
 
       </section>
