@@ -348,7 +348,8 @@
         
         
 
-        <div id="days" style="margin-left: 40px;"></div>
+        <div id="title">我们在一起的第</div>
+<div id="days" style="margin-left: auto;margin-right: auto;"></div>
 </script>
 <script language="javascript">
 function show_date_time(){
@@ -366,7 +367,7 @@ hrsold=setzero(Math.floor(e_hrsold));
 e_minsold=(e_hrsold-hrsold)*60;
 minsold=setzero(Math.floor((e_hrsold-hrsold)*60));
 seconds=setzero(Math.floor((e_minsold-minsold)*60));
-document.getElementById('days').innerHTML="我们在一起的第<br/>"+daysold+"天"+hrsold+"时"+minsold+"分"+seconds+"秒";
+document.getElementById('days').innerHTML=daysold+"天"+hrsold+"时"+minsold+"分"+seconds+"秒";
 }
 function setzero(i){
 if (i<10)
@@ -396,7 +397,7 @@ show_date_time();
         <div class="copyright" >
   
   &copy; 
-  <span itemprop="copyrightYear">2017</span>
+  <span itemprop="copyrightYear">2018</span>
   <span class="with-love">
     <i class="fa fa-heart"></i>
   </span>
